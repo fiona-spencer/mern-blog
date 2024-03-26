@@ -38,7 +38,7 @@ export default function OAuthCom() {
   
     return (
       <Button type='button' gradientDuoTone='pinkToOrange' outline onClick={handleGoogleClick}>
-        <AiFillGoogleCircle className='w-6 mr-2'/>
+        <AiFillGoogleCircle className='w-6 mr-2 text-2xl'/>
         Continue with Google
       </Button>
     );
