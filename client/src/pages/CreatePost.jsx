@@ -1,3 +1,4 @@
+      
 import { Alert, Button, FileInput, Select, TextInput } from 'flowbite-react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
@@ -22,7 +23,7 @@ export default function CreatePost() {
 
   const navigate = useNavigate();
 
-  const handleUploadImage = async () => {
+  const handleUpdloadImage = async () => {
     try {
       if (!file) {
         setImageUploadError('Please select an image');
@@ -119,7 +120,7 @@ export default function CreatePost() {
             gradientDuoTone='purpleToBlue'
             size='sm'
             outline
-            onClick={handleUploadImage}
+            onClick={handleUpdloadImage}
             disabled={imageUploadProgress}
           >
             {imageUploadProgress ? (
@@ -137,9 +138,9 @@ export default function CreatePost() {
         {imageUploadError && <Alert color='failure'>{imageUploadError}</Alert>}
         {formData.image && (
           <img
-          src={formData.image}
-          alt='upload'
-          className='w-full h-72 object-cover'
+            src={formData.image}
+            alt='upload'
+            className='w-full h-72 object-cover'
           />
         )}
         <ReactQuill
