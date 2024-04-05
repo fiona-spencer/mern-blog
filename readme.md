@@ -1,8 +1,9 @@
 ## YOUTUBE TUTORIAL
 
-https://www.youtube.com/watch?v=Kkht2mwSL_I
+https://www.youtube.com/watch?v=Kkht2mwSL_I&t=17933s
 
-## time: 4:58
+## time: 7:21
+stuck on add update post functionality
 
 ## MONDO DB
 
