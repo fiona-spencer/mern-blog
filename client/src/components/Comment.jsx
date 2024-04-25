@@ -47,6 +47,16 @@ export default function Comment({comment, onLike }) {
                     ' ' +
                     (comment.numberOfLikes === 1 ? 'like' : 'likes')}
               </p>
+              {
+                currentUser && (currentUser._id === comment.userId || currentUser.isAdmin) && (
+                  <button
+                    type="button"
+                    className="text-gray-400 hover:text-red-500"
+                  >
+                    Edit
+                  </button>
+                )
+              }
         </div>
       </div>
     </div>
